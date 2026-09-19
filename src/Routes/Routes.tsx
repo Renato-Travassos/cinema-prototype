@@ -1,9 +1,8 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link,NavLink } from 'react-router-dom';
 import Cadeiras from '../pages/Cadeiras';
 import Filmes from '../pages/Filmes';
 import Inicio from '../pages/Inicio';
-
-
+ 
 
 export default function App_routes() {
     return(        
