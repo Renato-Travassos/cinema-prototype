@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+ 
+*{
+  text-decoration: none;
+  font-family: "Cantarell", sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.barra_{     
+  padding: 10px;     
+    display: flex;
+    justify-content: space-evenly;
+   padding: 0.25em 1em;
+  font-size: 1.5rem;
+  transition: all 0.5s;       
+  } 
+ 
+@media screen and ( max-width:768px) {  
+  .barra_{
+  transform: translateY(-12px);  
+     opacity: 0; 
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+   transition: 
+    max-height 0.4s ease,
+    opacity 0.35s ease,
+    transform 0.35s ease;
+  }
+  .barra_.show {
+   background-color: black; 
+  max-height: 220px;  
+  opacity: 1;
+  transform: translateY(0);
+}
+}
